@@ -17,9 +17,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 900px;
+    width: 1500px;
     height: 600px;
-    background: #fff;
+    background: #3E3636;
     margin: 20px;
 }
 
@@ -49,19 +49,21 @@ body {
 .container .imgBx img {
     position: relative;
     width: 700px;
-    transform: rotate(-30deg);
-    left: -50px;
+    transform: rotate(-20deg);
+    top: 40px;
+    left: -10px;
     transition: .9s linear;
 }
 
 .container .details {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 50%;
     height: 100%;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 50px;
+    padding-right: 30;
 }
 
 .container .details h2{
@@ -69,20 +71,19 @@ body {
     padding: 0;
     font-size: 2.4em;
     line-height: 1em;
-    color: #444;
+    color: #C33633;
 }
 
 .container .details h2 span {
     font-size: 0.4em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #999;
+    color: #fff;
 }
 
 .container .details p {
     max-width: 85%;
-    margin-left: 15%;
-    color: #333;
+    color: #fff;
     font-size: 15px;
     margin-bottom: 36px;
 }
@@ -91,11 +92,13 @@ body {
     margin: 0;
     padding: 0;
     font-size: 2.5em;
-    color: #a2a2a2;
+    color: #C33633;
     float: left;
+    padding-right: 30px;
+    position: static;
 }
 .container .details button {
-    background: #000;
+    background: #C33633;
     color: #fff;
     border: none;
     outline: none;
@@ -105,10 +108,10 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 600;
-    border-radius: 40px;
-    float: right;
+    border-radius: 10px; 
+    float: inline-start;
+    margin-right: 1rem;
 }
-
 .product-colors span {
     width: 26px;
     height: 26px;
@@ -144,9 +147,16 @@ body {
     left: -5px;
     top: -5px;
 }
-
+.botao{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    float: left;
+    padding-right: 30px;
+}
 /* responsive */
-@media (max-width: 1080px) {
+@media (max-width: 1107px) {
     .container {
         height: auto;
     }
@@ -170,11 +180,14 @@ body {
     }
     .container .details p {
         margin-left: 0;
-        max-width: 100%;
     }
 }
-
-footer {
+@media (max-width: 501px) {
+    .botao{
+ 
+    }
+}
+footer{
     position: fixed;
     right: 16px;
     bottom: 12px;
@@ -185,3 +198,4 @@ footer a {
     text-decoration: none;
     font-size: 12px;
 }
+
